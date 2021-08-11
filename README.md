@@ -34,7 +34,10 @@ async function call() {
   const ethBalanceCall = ethcallProvider.getEthBalance(uniswapDaiPool);
   const daiBalanceCall = daiContract.balanceOf(uniswapDaiPool);
 
-  const [ethBalance, daiBalance] = await ethcallProvider.all([ethBalanceCall, daiBalanceCall]);
+  const [ethBalance, daiBalance] = await ethcallProvider.all(
+    [ethBalanceCall, daiBalanceCall],
+    {} // Call options
+  );
 
   console.log('ETH Balance:', ethBalance.toString());
   console.log('DAI Balance:', daiBalance.toString());
