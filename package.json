@@ -1,5 +1,5 @@
 {
-  "name": "ethers-multicall",
+  "name": "@defihelper/ethers-multicall",
   "version": "0.3.0",
   "description": "Make multiple Ethereum network requests in a single HTTP query. ethcall for ethers v5.",
   "main": "dist/index.js",
